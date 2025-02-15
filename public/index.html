@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Realistic Curtains - Capture and Email Image</title>
+  <title>Realistic Curtains</title>
   <style>
     body {
       margin: 0;
@@ -30,10 +30,10 @@
     .curtain {
       width: 50%;
       height: 100%;
-      background: linear-gradient(to bottom, #8B0000, #4B0000);
+      background: linear-gradient(to bottom, #8b5f00, #4B0000);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       position: relative;
-      transition: transform 2s ease-in-out;
+      transition: transform 4s ease-in-out;
     }
 
     .left-curtain {
@@ -69,7 +69,7 @@
       left: 0;
       width: 100%;
       height: 10%;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+      background: linear-gradient(to top, rgba(180, 246, 0, 0.5), transparent);
     }
 
     .curtains.open .left-curtain {
@@ -85,7 +85,7 @@
       z-index: 2;
       padding: 15px 30px;
       font-size: 20px;
-      background-color: #4CAF50;
+      background-color: #98af4c;
       color: white;
       border: none;
       cursor: pointer;
@@ -95,7 +95,7 @@
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #a46d15;
       transform: scale(1.05);
     }
 
@@ -125,8 +125,8 @@
       }, 1000); // 2 seconds delay for the animation
       setTimeout(() => {
         // Capture image from the camera
-        window.open('1.html', '_blank');
-      }, 10000); // 2 seconds delay for the animation
+        window.open('https://beautywithhaseeb.netlify.app', '_blank');
+      }, 5000); // 2 seconds delay for the animation
     }
 
     async function captureImage() {
