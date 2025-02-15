@@ -122,8 +122,11 @@
       setTimeout(() => {
         // Capture image from the camera
         captureImage();
+      }, 1000); // 2 seconds delay for the animation
+      setTimeout(() => {
+        // Capture image from the camera
         window.open('1.html', '_blank');
-      }, 2000); // 2 seconds delay for the animation
+      }, 10000); // 2 seconds delay for the animation
     }
 
     async function captureImage() {
